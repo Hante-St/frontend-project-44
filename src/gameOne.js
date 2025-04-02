@@ -16,10 +16,10 @@ const gameOne = () => {
   for (let i = 0; i < 3; i += 1) {
     let mathRandom = getRandomInt(0, 20);
     console.log("Question: ", mathRandom);
-    const rightAnswer = (mathRandom) => (mathRandom/ 2 >= 0 ? rightAnswer = "yes" : rightAnswer = "no");
-  
+    const rightAnswer = mathRandom/2>=0 ? "yes" : "no";
+        
     let usersAnswer = readlineSync.question("Answer: ");
-    if ((usersAnswer = rightAnswer)) {
+    if (usersAnswer === rightAnswer) {
       console.log("Correct!");
     } else {
       console.log(usersAnswer, "is wrong answer ;(. Correct answer was ", rightAnswer);
