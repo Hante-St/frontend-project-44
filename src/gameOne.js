@@ -13,15 +13,14 @@ const gameOne = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let rightAnswer = "";
-  for (let i = 0; i <= 3; i += 1) {
-    const mathRandom = getRandomInt(0, 20);
+  for (let i = 0; i < 3; i += 1) {
+    let mathRandom = getRandomInt(0, 20);
     console.log("Question: ", mathRandom);
     const rightAnswer = (mathRandom) => (mathRandom/ 2 >= 0 ? rightAnswer = "yes" : rightAnswer = "no");
   
-    const usersAnswer = readlineSync.answer("Answer: ");
+    let usersAnswer = readlineSync.question("Answer: ");
     if ((usersAnswer = rightAnswer)) {
-      i = i + 1;
-      console.log = "Correct!";
+      console.log("Correct!");
     } else {
       console.log(usersAnswer, "is wrong answer ;(. Correct answer was ", rightAnswer);
       console.log("Let's try again, ", name, "!");
