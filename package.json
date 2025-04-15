@@ -29,5 +29,9 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^16.0.0" 
-  }
+  },
+  "bin": {
+  "brain-games": "bin/brain-games.js",
+  "brain-even": "bin/brain-even.js"
+}
 }
