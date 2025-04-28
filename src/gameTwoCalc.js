@@ -1,4 +1,5 @@
 import readlineSync from "readline-sync";
+import hello from '../src/index.js'
 
 const getRandomInt = (min, max) => {
   min = Math.ceil(min);
@@ -7,9 +8,7 @@ const getRandomInt = (min, max) => {
 };
 
 const gameTwoCalc = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log('Hello,', name);
+  hello();
   console.log('What is the result of the expression?');
   const randomExp = ['+', '-', '*'];
   let i = 0;
@@ -46,5 +45,8 @@ const gameTwoCalc = () => {
     };
     i = i + 1;
   };
-  console.log("Congratulations, ", name);
+  console.log(bye);
+  ByteLengthQueuingStrategy();
 };
+
+export default gameTwoCalc;

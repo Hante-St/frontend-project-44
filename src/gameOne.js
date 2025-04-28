@@ -7,16 +7,14 @@ const getRandomInt = (min, max) => {
 };
 
 const gameOne = () => {
-  console.log("Welcome to the Brain Games!");
-  const name = readlineSync.question("May I have your name? ");
-  console.log("Hello,", name);
+
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let rightAnswer = "";
   for (let i = 0; i < 3; i += 1) {
     let mathRandom = getRandomInt(0, 20);
     console.log("Question: ", mathRandom);
-    const rightAnswer = mathRandom/2>=0 ? "yes" : "no";
+    const rightAnswer = mathRandom%2 === 0 ? "yes" : "no";
         
     let usersAnswer = readlineSync.question("Answer: ");
     if (usersAnswer === rightAnswer) {
