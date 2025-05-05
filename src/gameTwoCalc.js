@@ -1,5 +1,8 @@
 import readlineSync from "readline-sync";
-import hello from '../src/index.js'
+import { welcome } from "../src/index.js";
+import {playersName} from "../src/inlex.js";
+import {hello} from '../src/index.js';
+import {bye} from '../src/index.js';
 
 const getRandomInt = (min, max) => {
   min = Math.ceil(min);
@@ -8,7 +11,9 @@ const getRandomInt = (min, max) => {
 };
 
 const gameTwoCalc = () => {
-  hello();
+  welcome();
+playersName();
+hello()
   console.log('What is the result of the expression?');
   const randomExp = ['+', '-', '*'];
   let i = 0;
@@ -45,8 +50,8 @@ const gameTwoCalc = () => {
     };
     i = i + 1;
   };
-  console.log(bye);
-  ByteLengthQueuingStrategy();
+  bye();
 };
 
+gameTwoCalc();
 export default gameTwoCalc;
