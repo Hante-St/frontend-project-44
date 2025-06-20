@@ -2,30 +2,26 @@ import readlineSync from 'readline-sync';
 import getTheName from './cli.js';
 
 const runGame = (gameDescription, genarateQuestionAndAnswer) => {
-
-  const userName =getTheName();
+  const userName = getTheName();
 
   console.log(gameDescription);
 
-  for(let i = 0; i < 3; i++){
-
+  for (let i = 0; i < 3; i += 1) {
     const [question, correctAnswer] = genarateQuestionAndAnswer();
 
-    console.log(`Question ${question}`);
+    console.log(`Question: ${question}`);
 
     const usersAnswer = readlineSync.question('Your answer: ');
 
-    if(usersAnswer == correctAnswer){
+    if (usersAnswer === correctAnswer) {
       console.log('Correct!');
-    }else{
-      console.log(`'${userName}' is wrong answer. Correct answer was '${correctAnswer}'`);
-      console.log(`let's try ahain ${userName}`)
-      return
+    } else {
+      console.log(`'${userName}', '${usersAnswer}' is wrong answer. Correct answer was '${correctAnswer}'`);
+      console.log(`let's try ahain ${userName}`);
+      return;
     }
-
   }
   console.log(`Congratulations ${userName}`);
+};
 
-}
-
-export default runGame
+export default runGame;
