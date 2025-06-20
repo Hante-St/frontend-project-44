@@ -26,7 +26,8 @@ const progress = (firstNumber, step, questionNumber) => {
     }
     m += 1;
   }
-  const question = `${arrQuestion}`;
+  const output = Array.from(arrQuestion).join(' ');
+  const question = `${output}`;
   const correctAnswer = arr[questionNumber];
 
   return [question, correctAnswer];
