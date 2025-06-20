@@ -1,19 +1,19 @@
-import runGame from "../Utils/index.js"
-import getRandomInt from "../Utils/getRandomInt.js"
+import runGame from '../Utils/index.js'
+import getRandomInt from '../Utils/getRandomInt.js'
 
-const gameDescription = "What is the result of the expression?"
+const gameDescription = 'What is the result of the expression?'
 
-const randomExp = ["+", "-", "*"]
+const randomExp = ['+', '-', '*']
 const Calc = (numberOne, numberTwo) => {
   const randomIndex = Math.floor(Math.random() * randomExp.length)
   const question = `${numberOne} ${randomExp[randomIndex]} ${numberTwo}`
   let correctAnswer = 0
   if (randomIndex === 0) {
     correctAnswer = numberOne + numberTwo
-  } 
+  }
   else if (randomIndex === 1) {
     correctAnswer = numberOne - numberTwo
-  } 
+  }
   else if (randomIndex === 2) {
     correctAnswer = numberOne * numberTwo
   }

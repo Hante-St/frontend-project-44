@@ -15,11 +15,11 @@ const runGame = (gameDescription, genarateQuestionAndAnswer) => {
 
     if (usersAnswer === correctAnswer) {
       console.log('Correct!')
-    } 
+    }
     else {
       console.log(`'${userName}', '${usersAnswer}' is wrong answer. Correct answer was '${correctAnswer}'`)
       console.log(`Let's try again, ${userName}!`)
-      return;
+      return
     }
   }
   console.log(`Congratulations, ${userName}!`)

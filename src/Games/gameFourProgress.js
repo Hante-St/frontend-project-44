@@ -21,7 +21,7 @@ const progress = (firstNumber, step, questionNumber) => {
   while (m < arr.length) {
     if (m === questionNumber) {
       arrQuestion.push('..')
-    } 
+    }
     else {
       arrQuestion.push(arr[m])
     }
