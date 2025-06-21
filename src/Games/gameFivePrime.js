@@ -1,24 +1,23 @@
-import runGame from "../Utils/index.js";
-import getRandomInt from "../Utils/getRandomInt.js";
+import runGame from '../Utils/index.js'
+import getRandomInt from '../Utils/getRandomInt.js'
 
-const gameDescription =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 const Prime = (number) => {
-  const question = `${number}`
+  const question = `${number}`;
   let correctAnswer = 'yes'
   if (number < 2) {
-    correctAnswer = "no"
-  return [question, correctAnswer]
-}
+    correctAnswer = 'no'
+    return [question, correctAnswer];
+  }
   for (let i = 2; i <= Math.sqrt(number); i++) {
     if (number % i === 0) {
-      correctAnswer = "no"
+      correctAnswer = 'no'
       break
     }
   }
   return [question, correctAnswer]
-};
+}
 
 const gameFive = () => {
   const number = getRandomInt(0, 100)
