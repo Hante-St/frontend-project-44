@@ -9,29 +9,49 @@ To install you need to enter the command npm ci
 Game One: Brain-even
 Player has to answer if if the giving number is even.
 To start the game you need to enter node bin/brain-even.js
-Example of a successful game: Screenshot/GameOneSucsess.png
-Example of a loss: Screenshot/GameOneLoss.png
+Example of a successful game: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameOneSucsess.png)
+Example of a loss: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameOneLoss.png)
 
 Game Two: Brain-calc
 Player has to answer what is the result of the random expression.
 To start the game you need to enter node bin/brain-calc.js
-Example of a successful game: Screenshot/GameTwoSucsess.png
-Example of a loss: Screenshot/GameTwoLoss.png
+Example of a successful game: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameTwoSucsess.png)
+Example of a loss: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameTwoLoss.png)
 
 Game Three: Brain-gcd
 Player has to find the greatest common divisor of given numbers.
 To start the game you need to enter node bin/brain-gcd.js
-Example of a successful game: Screenshot/GameThreeSucsess.png
-Example of a loss: Screenshot/GameThreeLoss.png
+Example of a successful game: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameThreeSucsess.png)
+Example of a loss: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameThreeLoss.png)
 
 Game Four: Brain-progression
 Player has to answer, what number is missing in the progression.
 To start the game you need to enter node bin/brain-progression.js
-Example of a successful game: Screenshot/GameFourSucsess.png
-Example of a loss: Screenshot/GameFourLoss.png
+Example of a successful game: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameFourSucsess.png)
+Example of a loss: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameFourLoss.png)
 
 Game Five: Brain-prime
 Player has to answer if given number is prime.
 To start the game you need to enter node bin/brain-prime.js
-Example of a successful game: Screenshot/GameFiveSucsess.png
-Example of a loss: Screenshot/GameFiveLoss.png
+Example of a successful game: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameFiveSucsess.png)
+Example of a loss: 
+[Image alt](https://github.com/Hati-St/frontend-project-44
+/raw/master/Screenshots/GameFiveLoss.png)
